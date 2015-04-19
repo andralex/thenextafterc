@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Quick Start with D documentation build configuration file, created by
-# sphinx-quickstart on Sun Apr 19 19:25:30 2015.
+# Quick Start With D documentation build configuration file, created by
+# sphinx-quickstart on Sun Apr 19 19:37:11 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -30,10 +30,12 @@ import shlex
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'sphinx.ext.autodoc',
+]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['ntemplates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -47,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Quick Start with D'
+project = 'Quick Start With D'
 copyright = '2015, Ilya Yaroshenko'
 author = 'Ilya Yaroshenko'
 
@@ -138,7 +140,7 @@ html_theme = 'alabaster'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['nstatic']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -201,7 +203,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'QuickStartwithDdoc'
+htmlhelp_basename = 'QuickStartWithDdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -223,7 +225,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'QuickStartwithD.tex', 'Quick Start with D Documentation',
+  (master_doc, 'QuickStartWithD.tex', 'Quick Start With D Documentation',
    'Ilya Yaroshenko', 'manual'),
 ]
 
@@ -253,7 +255,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'quickstartwithd', 'Quick Start with D Documentation',
+    (master_doc, 'quickstartwithd', 'Quick Start With D Documentation',
      [author], 1)
 ]
 
@@ -267,8 +269,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'QuickStartwithD', 'Quick Start with D Documentation',
-   author, 'QuickStartwithD', 'One line description of project.',
+  (master_doc, 'QuickStartWithD', 'Quick Start With D Documentation',
+   author, 'QuickStartWithD', 'One line description of project.',
    'Miscellaneous'),
 ]
 
