@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Quick Start with D documentation build configuration file, created by
-# sphinx-quickstart on Sun Apr 19 17:40:59 2015.
+# Quick Start With D documentation build configuration file, created by
+# sphinx-quickstart on Sun Apr 19 19:19:50 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Quick Start with D'
+project = 'Quick Start With D'
 copyright = '2015, Ilya Yaroshenko'
 author = 'Ilya Yaroshenko'
 
@@ -75,7 +75,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -201,7 +201,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'QuickStartwithDdoc'
+htmlhelp_basename = 'QuickStartWithDdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -223,7 +223,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'QuickStartwithD.tex', 'Quick Start with D Documentation',
+  (master_doc, 'QuickStartWithD.tex', 'Quick Start With D Documentation',
    'Ilya Yaroshenko', 'manual'),
 ]
 
@@ -253,7 +253,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'quickstartwithd', 'Quick Start with D Documentation',
+    (master_doc, 'quickstartwithd', 'Quick Start With D Documentation',
      [author], 1)
 ]
 
@@ -267,8 +267,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'QuickStartwithD', 'Quick Start with D Documentation',
-   author, 'QuickStartwithD', 'One line description of project.',
+  (master_doc, 'QuickStartWithD', 'Quick Start With D Documentation',
+   author, 'QuickStartWithD', 'One line description of project.',
    'Miscellaneous'),
 ]
 
