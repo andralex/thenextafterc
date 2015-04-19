@@ -1,4 +1,4 @@
-Welcome to Quick Start with D documentation!
+Welcome to Quick Start with D!
 ==============================================
 
 NOT READY!
