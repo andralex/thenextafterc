@@ -1,17 +1,10 @@
 Welcome to Quick Start with D documentation!
 ==============================================
 
+NOT READY!
+
 Contents:
 
 .. toctree::
    :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
