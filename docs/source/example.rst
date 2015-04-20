@@ -10,15 +10,15 @@ D_ is complex multi-paradigm programming language.
 Hellow Wolrd!
 ~~~~~~~~~~~~~~
 
-To import ``MODULE`` from `C Standard library`_ use ``import core.stdc.MODULE;`` construction.
-
 The following well known С program prints "Hello, World!" to the standard output.
 
 .. literalinclude:: ../../examples/helloworld.c
     :language: c
     :tab-width: 4 
 
-It can be easily translated to D_:
+
+It can be easily translated to D_.
+Use ``import core.stdc.MODULE;`` construction to import ``MODULE`` from `C Standard library`_.
 
 .. literalinclude:: ../../examples/helloworld1.d
     :language: d
@@ -27,7 +27,7 @@ It can be easily translated to D_:
 .. seealso:: `Programming in D for C Programmers`_.
 
 
-Phobos_ based "Hello, World!" program looks simpler:
+Common D_ "Hello, World!" program based on Phobos_ looks simpler:
 
 .. literalinclude:: ../../examples/helloworld2.d
     :language: d

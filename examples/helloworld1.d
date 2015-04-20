@@ -1,9 +1,11 @@
 import core.stdc.stdio;
 
-immutable char[] nullTerminatedStr = "Hello, World!\0"; // ends with null!
+// ends with null!
+immutable char[] nullTerminatedStr = "Hello, World!\0"; 
 
 int main()
 {
-	puts(nullTerminatedStr.ptr); // calls external C function
+	// calls external C function
+	puts(nullTerminatedStr.ptr);
 	return 0;
 }
