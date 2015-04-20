@@ -227,8 +227,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'QuickStartWithD.tex', 'Quick Start With D Documentation',
-   'Ilya Yaroshenko', 'manual'),
+  (master_doc, 'QuickStartWithD.tex', 'Quick Start With D',
+   'Ilya Yaroshenko', 'howto'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
