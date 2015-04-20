@@ -221,14 +221,22 @@ latex_elements = {
 
 # Latex figure (float) alignment
 #'figure_align': 'htbp',
+
+   'papersize':'a4paper',
+   'pointsize':'12pt',
+   'classoptions': ',openany,oneside',
+   'babel': '\\usepackage[english,russian]{babel}',
+   'preamble': PREAMBLE
+
 }
+
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'QuickStartWithD.tex', 'Quick Start With D',
-   'Ilya Yaroshenko', 'howto'),
+   'Ilya Yaroshenko', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
