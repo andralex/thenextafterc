@@ -225,9 +225,7 @@ latex_elements = {
    'papersize':'a4paper',
    'pointsize':'12pt',
    'classoptions': ',openany,oneside',
-   'babel': '\\usepackage[english,russian]{babel}',
-   'preamble': PREAMBLE
-
+   'babel': '\\usepackage[english,russian]{babel}'
 }
 
 
