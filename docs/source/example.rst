@@ -20,17 +20,16 @@ The following program prints "Hello, World!" to the standard output.
 
 D `doesn't have a preprocessor <http://dlang.org/pretod.html>`_.
 Use ``import core.stdc.MODULE;`` construction to import ``MODULE`` from `C Standard library`_.
-Module ``core.stdc.stdio`` contains the ``puts`` prototype: 
-
-.. code-block:: d
-
-    extern(C) @system nothrow @nogc int puts(in char* s);
-
 
 .. literalinclude:: ../../examples/helloworld1.d
     :language: d
     :tab-width: 4
 
+Module ``core.stdc.stdio`` contains the ``puts`` prototype: 
+
+.. code-block:: d
+
+    extern(C) @system nothrow @nogc int puts(in char* s);
 
 Common D "Hello, World!" program based on Phobos_ looks simpler:
 
