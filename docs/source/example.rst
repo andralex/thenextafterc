@@ -16,7 +16,6 @@ The following program prints "Hello, World!" to the standard output.
 .. literalinclude:: ../../examples/helloworld.c
     :language: c
     :tab-width: 4 
-    :caption: Hello World program in C
 
 
 D `doesn't have a preprocessor <http://dlang.org/pretod.html>`_.
@@ -31,7 +30,6 @@ Module ``core.stdc.stdio`` contains the ``puts`` prototype:
 .. literalinclude:: ../../examples/helloworld1.d
     :language: d
     :tab-width: 4
-    :caption: Hello World program in D (C style)
 
 
 Common D "Hello, World!" program based on Phobos_ looks simpler:
@@ -39,7 +37,6 @@ Common D "Hello, World!" program based on Phobos_ looks simpler:
 .. literalinclude:: ../../examples/helloworld2.d
     :language: d
     :tab-width: 4	
-    :caption: Hello World program in D
 
 Phobos is the standard runtime library that comes with the D language compiler.
 
