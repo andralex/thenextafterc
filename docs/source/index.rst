@@ -1,4 +1,4 @@
-Welcome to Quick Start with D's documentation!
+Welcome to Quick Start with D!
 ==============================================
 
 NOT READY!
@@ -6,6 +6,7 @@ NOT READY!
 .. toctree::
    :maxdepth: 2
 
+   introduction
    sdk
    examples
    tools
