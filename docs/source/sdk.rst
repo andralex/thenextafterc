@@ -3,14 +3,26 @@ Software Development Kit
 
 NOT READY!
 
-Compiler
+Compilers
 --------------
+
+DMD
+~~~
+
+DMD
+
+LLVM D Compiler
+~~~~~~~~~~~~~~~~
+
+LLVM
+
+GNU D compiler
+~~~~~~~~~~~~~~~~
+
+GDC
 
 Build systems
 --------------
-
-Naive
-~~~~~~~~
 
 Makefile
 ~~~~~~~~
@@ -21,20 +33,8 @@ rdmd
 dub
 ~~~~~~~~
 
-Tools
---------------
 
-DCD
-~~~~~~~~
-
-Online Tools
---------------
-
-DPaste
-~~~~~~~~
-
-
-IDE
+Development Environments
 --------------
 
 Sublime Text 3

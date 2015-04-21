@@ -44,3 +44,12 @@ Phobos is the standard runtime library that comes with the D language compiler.
 .. _D: http://dlang.org
 .. _C Standard library: http://www.cplusplus.com/reference/clibrary/
 .. _Phobos: http://dlang.org/phobos/
+
+Plotting
+~~~~~~~~
+
+Web Application
+~~~~~~~~~~~~~~~
+
+Various Build Systems
+~~~~~~~~~~~~~~~~~~~~~~~
