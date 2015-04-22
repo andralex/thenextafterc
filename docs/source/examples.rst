@@ -17,7 +17,6 @@ The following program prints "Hello, World!" to the standard output.
 
 
 D `doesn't have a preprocessor <http://dlang.org/pretod.html>`_.
-
 Use ``import core.stdc.MODULE;`` construction to import ``MODULE`` from `C Standard library`_.
 
 .. literalinclude:: ../../examples/helloworld1.d

@@ -1,18 +1,11 @@
 Introduction
 ================
 
-NOT READY!
+It was mentioned that students can quickly master the D programming language without a detailed study using mostly its subset, which is close to the C PL.
 
-Было замечено, что студенты без детального изучения могут быстро ориентироваться в языке программирования D используя
-главным образом то его подмножество, которое близко к С.
+The present documentation is submitted to the rapid introduction to D for those who are already somehow familiar with the C language, and for those who for some reasons do not want to waste time on a consistent study of the language and related tools.
 
-Представленная документация служит быстрым введением в D для тех, 
-кто уже немного знаком с языком С и по тем или иным причинам не хочет 
-тратить время на последовательное изучение языка и сопутствующего инструментария.
+If you decide to use the D language and related tools in your daily work, you should start immediately with the study of the  `official page <http://dlang.org>`_ and of the book `"The D Programming Language" <http://erdani.com/index.php/books/tdpl/>`_ by Andrei Alexandrescu.
 
-Если Вы решили использовать язык D и сопутсвующие интсрументы в повседневной работе, Вам сразу
-стоит начать с изучения `оффициального сайта <http://dlang.org>`_
-и книги `"The D Programming Language" <http://erdani.com/index.php/books/tdpl/>`_ by Andrei Alexandrescu.
-
-D, вероятно, самый мощный из понастоящему системных языков.
-`It is a Dragon <http://thebird.nl/blog/D_Dragon.html>`_. Have a nice fligh!
+Probably D is the most powerful of the present `system languages <http://en.wikipedia.org/wiki/System_programming_language>`.
+`It is a dragon <http://thebird.nl/blog/D_Dragon.html>`_. Have a nice flight!
