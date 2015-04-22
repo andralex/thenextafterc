@@ -3,10 +3,6 @@ Examples
 
 NOT READY!
 
-D is complex multi-paradigm programming language.
-В тоже время, если Вы знаете С, чтобы начать использовать D потребуется 
-всего навсего посмотреть несколько примеров.
-
 D is complex multi-paradigm programming language. At the same time, if you know С programming language, to start using D you just need to look through some examples. 
 
 Hellow Wolrd!
