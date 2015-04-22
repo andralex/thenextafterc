@@ -1,6 +1,6 @@
 import core.stdc.stdio;
 
-// ends with null!
+// terminates with a null character
 immutable char[] nullTerminatedStr = "Hello, World!\0"; 
 
 int main()
