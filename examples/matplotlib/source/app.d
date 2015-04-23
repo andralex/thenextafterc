@@ -59,6 +59,6 @@ import matplotlib.pyplot as plt
 
 num_bins = 50
 ax = plt.subplot()
-n, bins, patches = ax.hist(sample, num_bins, normed=1, label='sample')
+n, bins, patches = ax.hist(sample, num_bins, normed=1)
 plt.show()
 `;

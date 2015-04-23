@@ -1,3 +1,4 @@
+*.dub
 
 *.sublime-workspace
 
@@ -14,3 +15,5 @@ examples/matplotlib/.dub/build/application-debug-posix.osx-x86_64-dmd_2067-B22D9
 examples/matplotlib/dub.selections.json
 
 examples/matplotlib/atmosphere_gm_charts
+
+examples/matplotlib/plotting_example
