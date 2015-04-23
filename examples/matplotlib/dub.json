@@ -1,0 +1,9 @@
+{
+	"name": "atmosphere_gm_charts",
+	"dependencies": {
+		"pyd": "~>0.9.4",
+	},
+	"subConfigurations": {
+		"pyd": "python34",
+	},
+}

@@ -2,3 +2,9 @@
 *.sublime-workspace
 
 *.sublime-project
+
+*.o
+
+examples/readdoubles2
+
+examples/readdoubles1
