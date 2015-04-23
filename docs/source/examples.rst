@@ -71,7 +71,7 @@ reads data from file and shows a histogram.
     :language: d
     :tab-width: 4
 
-.. image:: /images/hist.png
+.. image:: /img/hist.png
     :alt: Histogram image
 
 .. _matplotlib: http://matplotlib.org
