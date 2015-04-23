@@ -1,5 +1,5 @@
 {
-	"name": "atmosphere_gm_charts",
+	"name": "plotting_example",
 	"dependencies": {
 		"pyd": "~>0.9.4",
 	},

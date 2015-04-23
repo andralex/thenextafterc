@@ -8,3 +8,9 @@
 examples/readdoubles2
 
 examples/readdoubles1
+
+examples/matplotlib/.dub/build/application-debug-posix.osx-x86_64-dmd_2067-B22D9B4DC44F841A0861C6CE3D44FC8C/atmosphere_gm_charts
+
+examples/matplotlib/dub.selections.json
+
+examples/matplotlib/atmosphere_gm_charts

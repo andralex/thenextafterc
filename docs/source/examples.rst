@@ -43,8 +43,37 @@ Phobos is the standard runtime library that comes with the D language compiler.
 .. _C Standard library: http://www.cplusplus.com/reference/clibrary/
 .. _Phobos: http://dlang.org/phobos/
 
-Plotting
-~~~~~~~~
+Plotting with matplotlib (python)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are two projects can be used with the D programming language:
+
+	+ Plotcli_ is a command line application written in D that can create plots from text/csv files and from piped data, making it useful during data analysis.
+	+ PLplot_ is a cross-platform software package written in С for creating scientific plots. It includes low-level D bindings.
+
+But these two are not so convenient to use in comparison with matplotlib.
+
+matplotlib_ is a python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. matplotlib can be used in python scripts, the python and ipython shell, web application servers, and different graphical user interface toolkits. To integrate with python the PyD package can be used.
+
+PyD_ is a library that provides seamless interoperability between the D programming language and Python.
+The minimal configuration file for this example is
+
+.. literalinclude:: ../../examples/matplotlib/dub.json
+    :language: json
+    :tab-width: 4
+
+.. note:: The python should be `installed <https://www.python.org/downloads/>`_. PyD searches the version of the python that noted in the PyD's sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
+
+The following `example <>`_ 
+
+.. literalinclude:: ../../examples/matplotlib/source/app.d
+    :language: d
+    :tab-width: 4
+
+.. _matplotlib: http://matplotlib.org
+.. _Plotcli: https://github.com/BlackEdder/plotd
+.. _PyD: http://pyd.readthedocs.org
+.. _PLplot: http://plplot.sourceforge.net
 
 Web Application
 ~~~~~~~~~~~~~~~
