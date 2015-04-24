@@ -122,8 +122,6 @@ Initialization
 .. literalinclude:: ../../examples/vibed-mongo/dub.json
     :language: json
     :tab-width: 4
-    :name: dub.json
-    :caption: dub.json
 
 Версия ``"VibeDefaultMain"`` включает в проект функцию ``main`` определенную
 по умолчанию.

@@ -6,48 +6,79 @@ NOT READY!
 Compilers
 --------------
 
-DMD
-~~~
+.. DMD
+.. ~~~
 
-DMD
+.. DMD
 
-LLVM D Compiler
-~~~~~~~~~~~~~~~~
+.. LLVM D Compiler
+.. ~~~~~~~~~~~~~~~~
 
-LLVM
+.. LLVM
 
-GNU D compiler
-~~~~~~~~~~~~~~~~
+.. GNU D compiler
+.. ~~~~~~~~~~~~~~~~
 
-GDC
+.. GDC
 
 Build systems
 --------------
 
-Makefile
-~~~~~~~~
+.. Makefile
+.. ~~~~~~~~
 
-rdmd
-~~~~~~~~	
+.. rdmd
+.. ~~~~~~~~	
 
-dub
-~~~~~~~~
+.. dub
+.. ~~~~~~~~
 
 
 Development Environments
 --------------
 
-Sublime Text 3
-~~~~~~~~~~~~~~
+.. Sublime Text 3
+.. ~~~~~~~~~~~~~~
 
-Vim
-~~~~~~~~
+.. Vim
+.. ~~~~~~~~
 
-Mono-D
-~~~~~~~~
+.. Mono-D
+.. ~~~~~~~~
 
-Visual-D
-~~~~~~~~
+.. Visual-D
+.. ~~~~~~~~
 
-DDT
-~~~~~~~
+.. DDT
+.. ~~~~~~~
+
+Documentation generators
+-------------------------
+
+.. Harbored mode
+.. ~~~~~~~~~~~~~~~~
+
+.. ddoc
+.. ~~~~~~~~~~~~~~~~
+
+.. ddox
+.. ~~~~~~~~~~~~~~~~
+
+Online tools
+--------------
+.. Testing & Debugging
+.. -------------------
+
+.. Travis CI
+.. ~~~~~~~~~~~~~
+
+
+.. Code coverage
+.. --------------
+
+.. Coveralls
+.. ~~~~~~~~~~~~~
+
+
+.. Interactive D Compiler and Disassembler
+.. ----------------------------------------
