@@ -3,17 +3,15 @@ Introduction
 
 It was mentioned that students can quickly master the D programming language without a detailed study using mostly its subset, which is close to the C PL. 
 
-Рассмотрим простую программу, которая считывает из файла 10 строк, содержащих по одному числу и
-печатает в стандартный выход эти же числа, но сдвинутые на математическое ожидание.
+Consider a simple program that reads from a file of 10 lines, each containing a single number and prints to the standard output at the same number, but shifted to the mathematician expectation.
 
-Тогда как идиоматический D код выглядет достаточно непревычно:
+Whereas idiomatic D code looks pretty unusual:
 
 .. literalinclude:: ../../examples/readdoubles2.d
     :language: d
     :tab-width: 4
 
-для многих незнакомых с языком D та же самая программа может быть реализована хоть и более грамоздким,
-но в тоже время более понятным способом:
+for many unfamiliar with the language D the same program can be implemented even as more complex, but at the same time more understandable way:
 
 .. literalinclude:: ../../examples/readdoubles1.d
     :language: d
