@@ -1,0 +1,9 @@
+doctype html
+html
+    head
+        title= title ~ "(this is D expression)"
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        block content
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src='/javascripts/global.js')

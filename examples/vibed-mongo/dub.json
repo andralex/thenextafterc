@@ -1,0 +1,7 @@
+{
+	"name": "vibed-mongo",
+	"dependencies": {
+		"vibe-d": "~>0.7.23"
+	},
+	"versions": ["VibeDefaultMain"]
+}

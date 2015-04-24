@@ -27,14 +27,14 @@ void main()
 	auto pythonContext = new InterpContext();
 	/+
 	Uniform Function Call Syntax (UFCS) 
-	is used in the following line if code.
+	is used in the following line of code.
 	
 	Equivalent code would be just:
 	--------
 	pythonContext.sample = toNumpyArray(readData("view/data.txt"));
 	--------
 	+/
-	pythonContext.sample = "view/data.txt".readData.toNumpyArray;
+	pythonContext.sample = "data/data.txt".readData.toNumpyArray;
     pythonContext.py_stmts(script);
 }
 
