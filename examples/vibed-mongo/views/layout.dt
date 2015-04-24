@@ -1,7 +1,7 @@
 doctype html
 html
     head
-        title= title ~ "(it is D expression)"
+        title= title
         link(rel='stylesheet', href='/styles/style.css')
     body
         block content

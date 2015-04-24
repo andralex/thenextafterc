@@ -98,18 +98,73 @@ Web application это довольно хороший пример для по�
 и заклюяается она в том, что им необходимо быстро интегрировать 
 программы написанные на D с другими сервисами, языками программирования и базами данных.
 
+В качестве основы для данного примера взята статья
+"Сreating a simple restful web app with node.js, Express, and MongoDB"
+By Christopher Buecheler.
+
+.. В качестве is a D pacakge for easily building fast, productive network applications.
+
+.. Далее представлена краткая инструкция
+
+Initialization
+^^^^^^^^^^^^^^^
+
+Для создания скелета веб приложения запустите
+
+.. code-block:: shell
+
+    $ dub vibed-mongo vibe.d
+
+Эта команда создаст minimal HTTP server based on vibe.d в папке ``vibed-mongo``.
+
+Конфигурационный файл ``dub.json`` будет выглядеть примерно следующим образом 
 
 .. literalinclude:: ../../examples/vibed-mongo/dub.json
     :language: json
     :tab-width: 4
+    :name: dub.json
+    :caption: dub.json
 
-.. literalinclude:: ../../examples/vibed-mongo/source/service.d
-    :language: d
-    :tab-width: 4
+Версия ``"VibeDefaultMain"`` включает в проект функцию ``main`` определенную
+по умолчанию.
 
-.. literalinclude:: ../../examples/vibed-mongo/source/app.d
-    :language: d
-    :tab-width: 4
+Структура файлов ``vibed-mongo`` имеет следующую структуру:
+
+
+После установки MongoDB запустите его
+
+.. code-block:: shell
+
+    $ mongod
+
+В другой консоле выполнете
+
+.. code-block:: shell
+
+    $ mongod
+    > use vibed
+    switched to db vibed
+    > db.createCollection("userlist", {autoIndexID : true})
+    { "ok" : 1 }
+    > db.userlist.insert({
+        'username' : 'test1',
+        'email' : 'test1@test.com',
+        'fullname' : 'Bob Smith',
+        'age' : 27,
+        'location' : 'San Francisco',
+        'gender' : 'male'
+        })
+    WriteResult({ "nInserted" : 1 })
+    > exit
+    bye
+
+Команда создаст базу данных ``vibed`` с коллекций ``userlist``,
+в которой будет одна запись.
+
+Patches
+^^^^^^^^^
+
+В сравнении с исходной статьей незначительно был измененен `global.js`:
 
 .. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
     :language: js
@@ -122,3 +177,23 @@ Web application это довольно хороший пример для по�
     :tab-width: 4
     :lines: 129-138
     :lineno-start: 129
+
+
+Service
+^^^^^^^^^^^^^
+
+vibe.d является хорошим примером использования декларативного программирования на (with?) D.
+Сервис реализует добавление в базу и удаление из базы записей о пользователях.
+
+.. literalinclude:: ../../examples/vibed-mongo/source/service.d
+    :language: d
+    :tab-width: 4
+
+App
+^^^^^^^^^^^^^
+
+Осталось подключить MongoDB, инициализировать сервер и обработчик ошибок.
+
+.. literalinclude:: ../../examples/vibed-mongo/source/app.d
+    :language: d
+    :tab-width: 4
