@@ -17,3 +17,5 @@ examples/matplotlib/dub.selections.json
 examples/matplotlib/atmosphere_gm_charts
 
 examples/matplotlib/plotting_example
+
+examples/vibed-mongo/vibed-mongo

@@ -24,7 +24,10 @@ shared static this()
 
 	auto router = new URLRouter;
 	router.registerWebInterface(mongoService, mongoServiceSettings);
-	router.get("*", serveStaticFiles("public/"));
+	router
+		.get("/", (req, res)  
+			{ res.redirect("/users"); } )
+		.get("*", serveStaticFiles("public/"));
 
 	auto settings = new HTTPServerSettings;
 	with(settings)
