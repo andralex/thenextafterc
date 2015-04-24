@@ -104,7 +104,6 @@ function addUser(event) {
             error: function(xhr, textStatus, error){
                 alert(xhr.responseText);
             }
-
         });
 
     }
@@ -140,10 +139,8 @@ function deleteUser(event) {
 
     }
     else {
-
         // If they said no to the confirm, do nothing
         return false;
-
     }
 
 };

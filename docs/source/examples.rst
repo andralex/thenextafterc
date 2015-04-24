@@ -50,7 +50,7 @@ Build System
 Plotting with matplotlib (python)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two projects can be used with the D programming language:
+These are two projects that can be used with the D programming language:
 
 	+ Plotcli_ is a command line application written in D that can create plots from text/csv files and from piped data, making it useful during data analysis.
 	+ PLplot_ is a cross-platform software package written in С for creating scientific plots. It includes low-level D bindings.
@@ -66,7 +66,7 @@ The minimal configuration file for this example is
     :language: json
     :tab-width: 4
 
-.. note:: The python should be `installed <https://www.python.org/downloads/>`_. PyD searches the version of the python that noted in the sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
+.. note:: The python should be `installed <https://www.python.org/downloads/>`_. PyD searches the version of the python that is noted in the sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
 
 The `following program <https://github.com/9il/thenextafterc/tree/master/examples/matplotlib>`_
 reads data from a file and shows the histogram.
@@ -86,6 +86,19 @@ reads data from a file and shows the histogram.
 Web Application
 ~~~~~~~~~~~~~~~
 
+Web application это довольно хороший пример для последних глав
+книги, где читателю предлагается вполной мере воспользоваться средствами
+выразительности языка. То есть, как правило, web application
+представляет из себя сложный продукт, как с точки зрения
+знания языка, так и с точки зрения сложности используемых при этом библиотек 
+(тут наверное не стоит дословно переводить).
+
+И данный пример не является исключением. Тогда зачем он нужен людям желающим
+предельно быстро ознакомитсься с языком? Для многих из них, такая причина есть,
+и заклюяается она в том, что им необходимо быстро интегрировать 
+программы написанные на D с другими сервисами, языками программирования и базами данных.
+
+
 .. literalinclude:: ../../examples/vibed-mongo/dub.json
     :language: json
     :tab-width: 4
@@ -97,3 +110,15 @@ Web Application
 .. literalinclude:: ../../examples/vibed-mongo/source/app.d
     :language: d
     :tab-width: 4
+
+.. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
+    :language: js
+    :tab-width: 4
+    :lines: 96-107
+    :lineno-start: 96
+
+.. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
+    :language: js
+    :tab-width: 4
+    :lines: 129-138
+    :lineno-start: 129
