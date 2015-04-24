@@ -17,7 +17,7 @@ The following program prints "Hello, World!" to the standard output.
 
 
 D `doesn't have a preprocessor <http://dlang.org/pretod.html>`_.
-Use ``import core.stdc.MODULE;`` construction to import ``MODULE`` from `C Standard library`_.
+Use ``import core.stdc.MODULE;`` construction to import ``MODULE`` from the `C Standard library`_.
 
 .. literalinclude:: ../../examples/helloworld1.d
     :language: d
@@ -29,19 +29,23 @@ Module ``core.stdc.stdio`` contains the ``puts`` prototype:
 
     extern(C) @system nothrow @nogc int puts(in char* s);
 
-Common D "Hello, World!" program based on Phobos_ looks more simple:
+Common D "Hello, World!" program based on Phobos looks more simple:
 
 .. literalinclude:: ../../examples/helloworld2.d
     :language: d
     :tab-width: 4	
 
-Phobos is the standard runtime library that comes with the D language compiler.
+Phobos_ is the standard runtime library that comes with the D language compiler.
 
 .. seealso:: To find a collection of common C techniques, and to find out how to do the corresponding task in D click `here  <http://dlang.org/ctod.html>`_. However most of them can be implemented in C style.
 
 .. _D: http://dlang.org
 .. _C Standard library: http://www.cplusplus.com/reference/clibrary/
 .. _Phobos: http://dlang.org/phobos/
+
+
+Build System
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Plotting with matplotlib (python)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +66,7 @@ The minimal configuration file for this example is
     :language: json
     :tab-width: 4
 
-.. note:: The python should be `installed <https://www.python.org/downloads/>`_. PyD searches the version of the python that noted in the its sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
+.. note:: The python should be `installed <https://www.python.org/downloads/>`_. PyD searches the version of the python that noted in the sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
 
 The `following program <https://github.com/9il/thenextafterc/tree/master/examples/matplotlib>`_
 reads data from a file and shows the histogram.
@@ -82,5 +86,14 @@ reads data from a file and shows the histogram.
 Web Application
 ~~~~~~~~~~~~~~~
 
-Various Build Systems
-~~~~~~~~~~~~~~~~~~~~~~~
+.. literalinclude:: ../../examples/vibed-mongo/dub.json
+    :language: json
+    :tab-width: 4
+
+.. literalinclude:: ../../examples/vibed-mongo/source/service.d
+    :language: d
+    :tab-width: 4
+
+.. literalinclude:: ../../examples/vibed-mongo/source/app.d
+    :language: d
+    :tab-width: 4
