@@ -19,7 +19,7 @@ It was mentioned that students can quickly master the D programming language wit
     :language: d
     :tab-width: 4
 
-The present documentation is submitted to the rapid introduction to D for those who are already somehow familiar with the C language, and for those who for some reasons do not want to waste time on a consistent study of the language and related tools.
+The present documentation is submitted to the rapid introduction to D for those who are already somehow familiar with the C language and for some reasons do not want to waste time on a consistent study of the D language and related tools.
 
 If you decide to use the D language in your daily work, you should start immediately with the study of the  `official page <http://dlang.org>`_ and of the book `"The D Programming Language" <http://erdani.com/index.php/books/tdpl/>`_ by Andrei Alexandrescu.
 
