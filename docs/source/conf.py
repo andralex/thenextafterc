@@ -232,7 +232,8 @@ latex_elements = {
 
 'classoptions': ',openany,oneside',
 
-# 'babel': '\\usepackage[english]{babel} \n\\usepackage[section]{placeins}',
+'babel': '\\usepackage[english]{babel}',
+# 'babel': '\\usepackage[english]{babel}'
 }
 
 

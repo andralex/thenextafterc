@@ -45,8 +45,12 @@ Phobos_ is the standard runtime library that comes with the D language compiler.
 .. _Phobos: http://dlang.org/phobos/
 
 
-Build System
+Simple project with dub
 ~~~~~~~~~~~~~~~~~~~~~~~
+
+DUB_ is a build tool for D projects with support for automatically retrieving dependencies and integrating them in the build process. The design emphasis is on maximum simplicity for simple projects, while providing the opportunity to customize things when needed.
+
+.. _DUB: http://code.dlang.org/getting_started
 
 Plotting with matplotlib (python)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -153,14 +157,10 @@ Comparing with the original article ``global.js`` was slightly changed:
 .. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
     :language: js
     :tab-width: 4
-    :lines: 96-107
-    :lineno-start: 96
 
 .. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
     :language: js
     :tab-width: 4
-    :lines: 129-138
-    :lineno-start: 129
 
 
 Service
