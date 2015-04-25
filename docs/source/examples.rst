@@ -95,6 +95,8 @@ And this example is no exception. Then why do people who want to learn this lang
 
 The article "`Creating a simple restful web app with node.js, Express, and MongoDB <http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/>`_" by Christopher Buecheler is taken as a basis for this example.
 
+.. image:: /img/vibed-mongo.png
+    :alt: vibe.d web app
 
 Initialization
 ^^^^^^^^^^^^^^^
