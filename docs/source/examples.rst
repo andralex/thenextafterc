@@ -239,6 +239,6 @@ The following static constructor connects ``vibed`` database, creates the HTTP s
     :language: d
     :tab-width: 4
 
-All examples available at GitHub_.
+All examples available on GitHub_.
 
 .. _GitHub: http://github.com/9il/thenextafterc
