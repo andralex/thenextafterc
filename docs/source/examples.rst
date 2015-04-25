@@ -238,3 +238,7 @@ The following static constructor connects ``vibed`` database, creates the HTTP s
 .. literalinclude:: ../../examples/vibed-mongo/source/app.d
     :language: d
     :tab-width: 4
+
+All examples available at GitHub_.
+
+.. _GitHub: http://github.com/9il/thenextafterc
