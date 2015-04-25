@@ -30,17 +30,19 @@ class MongoService
 		HTTPServerResponse res,
 	)
 	{
-		logInfo(text("MongoService: POST /adduser : ", username));
-		
 		import vibe.utils.validation;
-		auto bson = Json.emptyObject;
-		bson.username = validateUserName(username);
-		bson.email = email.validateEmail;
-		bson.fullname = fullname;
+
+		logInfo(text("MongoService: POST /adduser : ", username));		
 		enforce(age < 200 && age >= 0, "wrong age");
-		bson.age = age;
+
+		auto bson     = Bson.emptyObject;
+		bson.username = validateUserName(username);
+		bson.email    = validateEmail(email);
+		bson.fullname = fullname;
+		bson.age      = age;
 		bson.location = location;
-		bson.gender = gender.toLower;
+		bson.gender   = gender.toLower;
+		
 		collection.insert(bson);
 		res.writeBody("");
 	}
