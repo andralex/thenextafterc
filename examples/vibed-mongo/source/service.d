@@ -8,7 +8,7 @@ class MongoService
 	private MongoCollection collection;
 	const string title;
 
-	this(MongoCollection collection, string title = null)
+	this(MongoCollection collection, string title = "")
 	{
 		this.collection = collection;
 		this.title = title;
