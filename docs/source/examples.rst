@@ -157,17 +157,18 @@ Comparing with the original article ``global.js`` was slightly changed:
 .. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
     :language: js
     :tab-width: 4
+    :lines: 96-107
 
 .. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
     :language: js
     :tab-width: 4
-
+    :lines: 129-138
 
 Service
 ^^^^^^^^^^^^^
 
 ``vibe.d`` is a good example of the use of declarative programming with D. 
-Service performs an addition, select and remove operations for user entries at a MongoDB.
+Service performs an ``insert``, ``select`` and ``remove`` operations for user entries at a MongoDB.
 
 .. literalinclude:: ../../examples/vibed-mongo/source/service.d
     :language: d
