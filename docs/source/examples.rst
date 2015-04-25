@@ -117,15 +117,16 @@ The version ``"VibeDefaultMain"`` includes the main function defined by default.
 
 The project has the following structure:
 
-.. code-block::
-    dub.json            - project c
+.. code-block:: text
+
+    dub.json            - package information
     source/             - D source code
         app.d
         service.d
     views/              - Diet templates
         index.dt
         layout.dt
-    public/             - tatic directories
+    public/             - static directories
         javascripts/
             global.js
         styles
