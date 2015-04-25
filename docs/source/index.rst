@@ -7,7 +7,6 @@ NOT READY!
    :maxdepth: 2
 
    introduction
-   sdk
    examples
    integration
    links

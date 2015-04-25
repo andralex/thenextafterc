@@ -22,4 +22,7 @@ The present documentation is submitted to the rapid introduction to D for those 
 If you decide to use the D language in your daily work, you should start immediately with the study of the  `official page <http://dlang.org>`_ and of the book `"The D Programming Language" <http://erdani.com/index.php/books/tdpl/>`_ by Andrei Alexandrescu.
 
 Probably D is the most powerful of the present `system programming languages <http://en.wikipedia.org/wiki/System_programming_language>`_.
-It is a `dragon <http://thebird.nl/blog/D_Dragon.html>`_. Have a nice flight!
+
+*D is a dragon* [#dragon]_. *Have a nice flight!*
+
+.. [#dragon] `D is a dragon, or why D matters for Bioinformatics <http://thebird.nl/blog/D_Dragon.html>`_ by Pjotr Prins.

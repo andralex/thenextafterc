@@ -3,11 +3,12 @@ Examples
 
 NOT READY!
 
-D is complex multi-paradigm programming language. At the same time, if you know С programming language, to start using D you just need to look through some examples. 
+D is a complex multi-paradigm programming language. At the same time, if you know C programming language and you want to start using D then you just need to look through some examples.
+
 
 Hellow Wolrd!
 ~~~~~~~~~~~~~~
-
+    
 C programs can be easily translated to D.
 The following program prints "Hello, World!" to the standard output.
 
@@ -29,7 +30,7 @@ Module ``core.stdc.stdio`` contains the ``puts`` prototype:
 
     extern(C) @system nothrow @nogc int puts(in char* s);
 
-Common D "Hello, World!" program based on Phobos looks more simple:
+Common D "Hello, World!" program which is based on Phobos looks more simple:
 
 .. literalinclude:: ../../examples/helloworld2.d
     :language: d
@@ -53,7 +54,7 @@ Plotting with matplotlib (python)
 These are two projects that can be used with the D programming language:
 
 	+ Plotcli_ is a command line application written in D that can create plots from text/csv files and from piped data, making it useful during data analysis.
-	+ PLplot_ is a cross-platform software package written in С for creating scientific plots. It includes low-level D bindings.
+	+ PLplot_ is a cross-platform software package written in C for creating scientific plots. It includes low-level D bindings.
 
 But these two are not so convenient to use, in comparison with matplotlib.
 
@@ -86,60 +87,46 @@ reads data from a file and shows the histogram.
 Web Application
 ~~~~~~~~~~~~~~~
 
-Web application это довольно хороший пример для последних глав
-книги, где читателю предлагается вполной мере воспользоваться средствами
-выразительности языка. То есть, как правило, web application
-представляет из себя сложный продукт, как с точки зрения
-знания языка, так и с точки зрения сложности используемых при этом библиотек 
-(тут наверное не стоит дословно переводить).
+Web application is a pretty good example of the last chapters of the book, where the reader is suggested to make use of the means of expression in the language. As a rule, web application is a complex product, both in terms of knowledge of the language and in terms of complexity used in this library.
 
-И данный пример не является исключением. Тогда зачем он нужен людям желающим
-предельно быстро ознакомитсься с языком? Для многих из них, такая причина есть,
-и заклюяается она в том, что им необходимо быстро интегрировать 
-программы написанные на D с другими сервисами, языками программирования и базами данных.
+And this example is no exception. Then why do people who want to learn this language very quickly have a need in it? Many of them have a reason and it is that they need to integrate quickly programs written in D with other services, programming languages and databases. 
 
-В качестве основы для данного примера взята статья
-"Сreating a simple restful web app with node.js, Express, and MongoDB"
-By Christopher Buecheler.
+The article "`Creating a simple restful web app with node.js, Express, and MongoDB <http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/>`_" by Christopher Buecheler is taken as a basis for this example.
 
-.. В качестве is a D pacakge for easily building fast, productive network applications.
-
-.. Далее представлена краткая инструкция
 
 Initialization
 ^^^^^^^^^^^^^^^
 
-Для создания скелета веб приложения запустите
+To create a skeleton web application, run:
 
 .. code-block:: shell
 
     $ dub vibed-mongo vibe.d
 
-Эта команда создаст minimal HTTP server based on vibe.d в папке ``vibed-mongo``.
+This will make in directory ``vibed-mongo`` with a minimal HTTP server based on vibe.d.
 
-Конфигурационный файл ``dub.json`` будет выглядеть примерно следующим образом 
+The configuration file ``dub.json`` will look something like this:
 
 .. literalinclude:: ../../examples/vibed-mongo/dub.json
     :language: json
     :tab-width: 4
 
-Версия ``"VibeDefaultMain"`` включает в проект функцию ``main`` определенную
-по умолчанию.
+The version ``"VibeDefaultMain"`` includes the main function defined by default.
 
-Структура файлов ``vibed-mongo`` имеет следующую структуру:
+The project has the following structure:
 
-
-После установки MongoDB запустите его
+After installing MongoDB run Mongo servers
 
 .. code-block:: shell
 
     $ mongod
 
-В другой консоле выполнете
+
+In another console run Mongo console
 
 .. code-block:: shell
 
-    $ mongod
+    $ mongo
     > use vibed
     switched to db vibed
     > db.createCollection("userlist", {autoIndexID : true})
@@ -156,13 +143,12 @@ Initialization
     > exit
     bye
 
-Команда создаст базу данных ``vibed`` с коллекций ``userlist``,
-в которой будет одна запись.
+The script above will create a ``vibed`` database with a ``userlist`` collection, which will contain one record.
 
 Patches
 ^^^^^^^^^
 
-В сравнении с исходной статьей незначительно был измененен `global.js`:
+Comparing with the original article ``global.js`` was slightly changed:
 
 .. literalinclude:: ../../examples/vibed-mongo/public/javascripts/global.js
     :language: js
@@ -180,8 +166,8 @@ Patches
 Service
 ^^^^^^^^^^^^^
 
-vibe.d является хорошим примером использования декларативного программирования на (with?) D.
-Сервис реализует добавление в базу и удаление из базы записей о пользователях.
+``vibe.d`` is a good example of the use of declarative programming with D. 
+Service performs an addition, select and remove operations for user entries at a MongoDB.
 
 .. literalinclude:: ../../examples/vibed-mongo/source/service.d
     :language: d
@@ -190,7 +176,7 @@ vibe.d является хорошим примером использовани
 App
 ^^^^^^^^^^^^^
 
-Осталось подключить MongoDB, инициализировать сервер и реализовать обработчик ошибок.
+Following static constructor connects ``vebid`` MongoDB, creates vibe.d server and implements an error handler.
 
 .. literalinclude:: ../../examples/vibed-mongo/source/app.d
     :language: d
