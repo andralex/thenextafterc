@@ -24,7 +24,7 @@ class MongoService
 		string username,
 		string email,
 		string fullname,
-		int age,
+		uint age,
 		string location,
 		string gender,
 		HTTPServerResponse res,
@@ -33,7 +33,7 @@ class MongoService
 		import vibe.utils.validation;
 
 		logInfo(text("MongoService: POST /adduser : ", username));		
-		enforce(age < 200 && age >= 0, "wrong age");
+		enforce(age < 200, "wrong age");
 
 		auto bson     = Bson.emptyObject;
 		bson.username = validateUserName(username);
@@ -55,10 +55,7 @@ class MongoService
 
 	@path("deleteuser/:id")
 	@method(HTTPMethod.DELETE)
-	void pullOutUser(
-		BsonObjectID _id,
-		HTTPServerResponse res,
-		)
+	void pullOutUser(BsonObjectID _id, HTTPServerResponse res)
 	{
 		logInfo(text("MongoService: GET /deleteuser/", _id));
 		collection.remove(["_id": _id]);
