@@ -117,7 +117,7 @@ The version ``"VibeDefaultMain"`` includes the main function defined by default.
 
 The project has the following structure:
 
-.. code-block:: text
+.. code-block::
     dub.json            - project c
     source/             - D source code
         app.d
