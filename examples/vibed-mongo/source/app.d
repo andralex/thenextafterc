@@ -9,19 +9,13 @@ shared static this()
 	auto db = connectMongoDB("localhost").getDatabase("vibed");
 	auto collection = db["userlist"];
 
-	logInfo("Querying DB...");
-	//Bson query = Bson(["name" : Bson("hans")]);
-	auto result = collection.find();
-
-	logInfo("Iterating results...");
-	foreach (i, doc; result)
-		logInfo("Item %d: %s", i, doc.toJson().toString());
-
+	logInfo("Creating service...");
 	auto mongoService = new MongoService(collection, title);
-
 	auto mongoServiceSettings = new WebInterfaceSettings;
 	mongoServiceSettings.urlPrefix = "/users";
 
+
+	logInfo("Setup router...");
 	auto router = new URLRouter;
 	router.registerWebInterface(mongoService, mongoServiceSettings);
 	router
@@ -29,6 +23,7 @@ shared static this()
 			{ res.redirect("/users"); } )
 		.get("*", serveStaticFiles("public/"));
 
+	logInfo("Setup HTTP server...");
 	auto settings = new HTTPServerSettings;
 	with(settings)
 	{
@@ -45,5 +40,6 @@ shared static this()
 			};		
 	}
 
+	logInfo("Listen HTTP");
 	listenHTTP(settings, router);
 }

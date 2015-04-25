@@ -3,17 +3,19 @@ Links
 
 NOT READY!
 
-General
------------
-
-Libraries and Frameworks
--------------------------
+Books
+-------------------
 
 Articles
 ------------
 
 Compilers
 --------------
+
+Development Environments
+------------------------
+
+
 
 .. DMD
 .. ~~~
@@ -30,21 +32,7 @@ Compilers
 
 .. GDC
 
-Build systems
---------------
 
-.. Makefile
-.. ~~~~~~~~
-
-.. rdmd
-.. ~~~~~~~~	
-
-.. dub
-.. ~~~~~~~~
-
-
-Development Environments
---------------
 
 .. Sublime Text 3
 .. ~~~~~~~~~~~~~~
@@ -90,3 +78,6 @@ Online tools
 
 .. Interactive D Compiler and Disassembler
 .. ----------------------------------------
+
+Libraries and Frameworks
+-------------------------

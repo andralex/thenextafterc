@@ -46,7 +46,47 @@ Phobos_ is the standard runtime library that comes with the D language compiler.
 Simple project with dub
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-DUB_ is a build tool for D projects with support for automatically retrieving dependencies and integrating them in the build process. The design emphasis is on maximum simplicity for simple projects, while providing the opportunity to customize things when needed.
+DUB_ is a build tool for D projects with support for automatically retrieving dependencies and integrating them in the build process. The design emphasis is on maximum simplicity for simple projects, while providing the opportunity to customize things when needed. 
+
+To create the initial project with name ``component``, run ``dub init component``.
+
+Remove automatically created ``component/source/app.d`` file 
+and create the following file structure
+
+.. code-block:: text
+
+    dub.json
+    component/
+        source/
+            component/
+                mod.d
+                package.d
+
+where ``component/package.d`` is the main module ``component``
+
+.. literalinclude:: ../../examples/dub-example/component/source/component/package.d
+    :language: d
+    :tab-width: 4   
+
+and ``component/mod.d`` is the inner module ``component.mod``
+
+.. literalinclude:: ../../examples/dub-example/component/source/component/mod.d
+    :language: d
+    :tab-width: 4   
+
+To test this module, run ``dub test`` from package's folder.
+
+``removeSingleLineComments`` can be imported with ``import component;`` and ``import component.mod;``.
+To use *component* package, put the following dependency into your project's dub.json into the dependencies section:
+
+.. code-block:: js
+
+    {
+        ...
+        "dependencies": {
+            "component": "~master"
+        }
+    }
 
 .. _DUB: http://code.dlang.org/getting_started
 
@@ -89,9 +129,9 @@ reads data from a file and shows the histogram.
 Web Application
 ~~~~~~~~~~~~~~~
 
-Web application is a pretty good example of the last chapters of the book, where the reader is suggested to make use of the means of expression in the language. As a rule, web application is a complex product, both in terms of knowledge of the language and in terms of complexity used in this library.
+Web application is a pretty good example of the last chapters of any book, where the reader is suggested to make use of the means of expression in the language. As a rule, web application is a complex product, both in terms of knowledge of the language and in terms of code complexity of the used libraries.
 
-And this example is no exception. Then why do people who want to learn this language very quickly have a need in it? Many of them have a reason and it is that they need to integrate quickly programs written in D with other services, programming languages and databases. 
+And this example is no exception. Then why do people who want to learn D language very quickly still need example of web app? Many of them have a reason and it is that they need to integrate quickly programs written in D with other services, programming languages and databases. 
 
 The article "`Creating a simple restful web app with node.js, Express, and MongoDB <http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/>`_" by Christopher Buecheler is taken as a basis for this example.
 
@@ -105,7 +145,7 @@ To create a skeleton web application, run:
 
 .. code-block:: shell
 
-    $ dub vibed-mongo vibe.d
+    $ dub init vibed-mongo vibe.d
 
 This will make in directory ``vibed-mongo`` with a minimal HTTP server based on vibe.d.
 
@@ -135,14 +175,14 @@ The project has the following structure:
             style.css
         favicon.ico
 
-After installing MongoDB run Mongo servers
+After installing MongoDB, run the server
 
 .. code-block:: shell
 
     $ mongod
 
 
-In another console run Mongo console
+In another console run the Mongo interpreter
 
 .. code-block:: shell
 
@@ -163,7 +203,7 @@ In another console run Mongo console
     > exit
     bye
 
-The script above will create a ``vibed`` database with a ``userlist`` collection, which will contain one record.
+The above script creates a ``vibed`` database with a ``userlist`` collection, which will contain one record.
 
 Patches
 ^^^^^^^^^
@@ -193,7 +233,7 @@ Service performs an ``insert``, ``select`` and ``remove`` operations for user en
 App
 ^^^^^^^^^^^^^
 
-Following static constructor connects ``vebid`` MongoDB, creates vibe.d server and implements an error handler.
+The following static constructor connects ``vibed`` database, creates the HTTP server and implements the errors handler.
 
 .. literalinclude:: ../../examples/vibed-mongo/source/app.d
     :language: d

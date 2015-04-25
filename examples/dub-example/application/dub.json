@@ -1,0 +1,9 @@
+{
+	"name": "application",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2015, ilya",
+	"authors": ["ilya"],
+	"dependencies": {
+		"comp": "~master"
+	}
+}
