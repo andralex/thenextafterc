@@ -1,8 +1,6 @@
 Examples
 ==============================================
 
-NOT READY!
-
 D is a complex multi-paradigm programming language. At the same time, if you know C programming language and you want to start using D then you just need to look through some examples.
 
 
