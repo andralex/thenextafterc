@@ -4,7 +4,7 @@ Integration with other languages
 C and friends
 -------------
 
-D that `has <http://dlang.org/interfaceToC.html>`_ full support for C ABI [#ABI]_ had recently been significantly improved for `interfacing with C++ <http://dlang.org/cpp_interface.html>`_  (however it's worth noting that there is no support for C++ exceptions). Jacob Carlborg did a great job of integrating with Objective-C, which is still waiting to be no less grandiose Review by Walter Bright.
+D that `has <http://dlang.org/interfaceToC.html>`_ full support for C ABI [#ABI]_ had recently been significantly improved for `interfacing with C++ <http://dlang.org/cpp_interface.html>`_  (however there is no support for C++ exceptions). Jacob Carlborg did a great job of integrating with Objective-C, which is still waiting to be no less grandiose review by Walter Bright.
 
 Scripting languages
 -------------------

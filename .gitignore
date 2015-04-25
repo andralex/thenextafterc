@@ -2,6 +2,8 @@ docs/build
 
 *.dub
 
+*.selections.json
+
 *.sublime-workspace
 
 *.sublime-project
@@ -21,3 +23,11 @@ examples/matplotlib/atmosphere_gm_charts
 examples/matplotlib/plotting_example
 
 examples/vibed-mongo/vibed-mongo
+
+examples/dub-example/application/application
+
+examples/dub-example/component/__test__library__
+
+examples/dub-example/component/libcomponent.a
+
+examples/dub-example/application/grep

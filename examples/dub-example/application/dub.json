@@ -4,6 +4,6 @@
 	"copyright": "Copyright © 2015, ilya",
 	"authors": ["ilya"],
 	"dependencies": {
-		"comp": "~master"
+		"component": "~master"
 	}
 }

@@ -6,13 +6,13 @@ module component.mod;
 import std.algorithm, std.ascii, std.range, std.string, std.functional;
 
 /++
+Reads forward range `ir` and removes single line comments.
+The result is stored in output range `or`.
+
 Params:
 	or = output range
 	ir = input range
-	cmt = comment prefix (like // in or # in Python)
-
-Returns
-	Text without single line comments.
+	cmt = comment prefix (like // in C or # in Python)
 +/
 void removeSingleLineComments
 	(OutputRange, Range1, Range2)            // template parameters
