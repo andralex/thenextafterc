@@ -41,9 +41,7 @@ class MongoService
 		bson.age = age;
 		bson.location = location;
 		bson.gender = gender.toLower;
-		//
 		collection.insert(bson);
-		//
 		res.writeBody("");
 	}
 
@@ -61,9 +59,7 @@ class MongoService
 		)
 	{
 		logInfo(text("MongoService: GET /deleteuser/", _id));
-		//
 		collection.remove(["_id": _id]);
-		//
 		res.writeBody("");
 	}
 }
