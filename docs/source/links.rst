@@ -88,6 +88,5 @@ Online tools
 .. Coveralls
 .. ~~~~~~~~~~~~~
 
-
 .. Interactive D Compiler and Disassembler
 .. ----------------------------------------

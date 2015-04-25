@@ -119,6 +119,21 @@ The version ``"VibeDefaultMain"`` includes the main function defined by default.
 
 The project has the following structure:
 
+.. code-block:: text
+    dub.json            - project c
+    source/             - D source code
+        app.d
+        service.d
+    views/              - Diet templates
+        index.dt
+        layout.dt
+    public/             - tatic directories
+        javascripts/
+            global.js
+        styles
+            style.css
+        favicon.ico
+
 After installing MongoDB run Mongo servers
 
 .. code-block:: shell
