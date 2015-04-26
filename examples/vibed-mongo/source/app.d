@@ -40,6 +40,6 @@ shared static this()
 			};		
 	}
 
-	logInfo("Listen HTTP");
+	logInfo("Listen http://127.0.0.1:8080");
 	listenHTTP(settings, router);
 }
