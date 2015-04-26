@@ -34,12 +34,12 @@ shared static this()
 			{
 				with(error) res.writeBody(
 					format("Code: %s\n Message: %s\n Exception: %s",
-						error.code, 
-						error.message, 
-						error.exception ? error.exception.msg : ""));
+						code, 
+						message, 
+						exception ? exception.msg : ""));
 			};		
 	}
 
-	logInfo("Listen http://127.0.0.1:8080");
+	//Listening http://127.0.0.1:8080
 	listenHTTP(settings, router);
 }
