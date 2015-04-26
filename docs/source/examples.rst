@@ -224,7 +224,7 @@ Service
 ^^^^^^^^^^^^^
 
 ``vibe.d`` is a good example of the use of declarative programming with D. 
-Service performs an ``insert``, ``select`` and ``remove`` operations for user entries at a mongo collection.
+Service performs an *insert*, *select* and *remove* operations for user entries at a mongo collection.
 
 .. literalinclude:: ../../examples/vibed-mongo/source/service.d
     :language: d
