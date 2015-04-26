@@ -35,6 +35,7 @@ void main()
 	--------
 	+/
 	pythonContext.sample = "data/data.txt".readData.toNumpyArray;
+	pythonContext.num_bins = 50;
     pythonContext.py_stmts(script);
 }
 
@@ -53,12 +54,7 @@ double[] readData(string file)
 }
 
 immutable script = `
-import numpy as np
-import matplotlib
 import matplotlib.pyplot as plt
-
-num_bins = 50
-ax = plt.subplot()
-n, bins, patches = ax.hist(sample, num_bins, normed=1)
+n, bins, patches = plt.hist(sample, num_bins, normed=1)
 plt.show()
 `;
