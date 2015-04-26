@@ -9,7 +9,7 @@ D that `has <http://dlang.org/interfaceToC.html>`_ full support for C ABI [#ABI]
 Scripting languages
 -------------------
 
-You are already somehow familiar with the integration of scripting languages on the example of the use of the matplotlib library and `PyD <https://github.com/ariovistus/pyd>`_. Since most of them have a C API [#API]_, their integration with D can be performed without problems.
+You are already somehow familiar with the integration of scripting languages on the `example <examples.html#plotting-with-matplotlib-python>`_ of the use of the matplotlib library and `PyD <https://github.com/ariovistus/pyd>`_. Since most of them have a C API [#API]_, their integration with D can be performed without problems.
 
 There is a `realization <https://github.com/DigitalMars/DMDScript>`_ of the ECMA 262 (Javascript) programming language written by Walter Bright and updated by Dmitry Olshansky.
 
