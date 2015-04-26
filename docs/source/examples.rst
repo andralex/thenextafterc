@@ -233,7 +233,7 @@ Service performs an *insert*, *select* and *remove* operations for user entries 
 App
 ^^^^^^^^^^^^^
 
-The following static constructor connects ``vibed`` database, creates the HTTP server and implements the errors handler.
+The following static constructor connects ``vibed`` database, creates the HTTP server and implements the error handler.
 
 .. literalinclude:: ../../examples/vibed-mongo/source/app.d
     :language: d
