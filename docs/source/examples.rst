@@ -80,7 +80,7 @@ and ``component/mod.d`` is the inner module ``component.mod``
 
 To test this module, run ``dub test`` from package's folder.
 
-``removeSingleLineComments`` can be imported with ``import component;`` and ``import component.mod;``.
+``removeSingleLineComments`` can be imported with ``import component;`` or ``import component.mod;``.
 To use *component* package, put the following dependency into your project's dub.json into the dependencies section:
 
 .. code-block:: js
