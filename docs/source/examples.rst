@@ -4,6 +4,10 @@ Examples
 D is a complex multi-paradigm programming language. At the same time, if you know C programming language and you want to start using D then you just need to look through some examples.
 
 
+.. tip:: All examples available on GitHub_.
+
+.. _GitHub: http://github.com/9il/thenextafterc
+
 Hellow Wolrd!
 ~~~~~~~~~~~~~~
     
@@ -238,7 +242,3 @@ The following static constructor connects ``vibed`` database, creates the HTTP s
 .. literalinclude:: ../../examples/vibed-mongo/source/app.d
     :language: d
     :tab-width: 4
-
-All examples available on GitHub_.
-
-.. _GitHub: http://github.com/9il/thenextafterc
