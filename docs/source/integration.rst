@@ -13,7 +13,7 @@ You are already somehow familiar with the integration of scripting languages on 
 
 There is a `realization <https://github.com/DigitalMars/DMDScript>`_ of the ECMA 262 (Javascript) programming language written by Walter Bright and updated by Dmitry Olshansky.
 
-It is also worth mentioning a popular computer games scripting language Lua. Unlike many other libraries built on the Lua C API, `LuaD <https://github.com/JakobOvrum/LuaD>`_ does not expose the Lua stack - instead, it has wrappers for references to Lua objects, and supports seamlessly and directly converting any D type into a Lua type and vice versa.
+It is also worth mentioning the Lua programming language. Unlike many other libraries built on the Lua C API, `LuaD <https://github.com/JakobOvrum/LuaD>`_ does not expose the Lua stack - instead, it has wrappers for references to Lua objects, and supports seamlessly and directly converting any D type into a Lua type and vice versa.
 
 .. [#API] Application Programming Interface
 .. [#ABI] Application Binary Interface
