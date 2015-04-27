@@ -1,7 +1,14 @@
 extends layout
 
 block content
-    h1= title
+    - /++
+    - The main difference is that you write D expressions and 
+    - statements instead of JavaScript.
+    - +/
+    - import std.format;
+    - auto fullTitle = format("%s web app", title);
+
+    h1= fullTitle
     p Welcome to our test
 
     // Wrapper

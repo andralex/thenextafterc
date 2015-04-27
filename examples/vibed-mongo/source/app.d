@@ -3,7 +3,7 @@ import service;
 
 shared static this()
 {
-	immutable string title = "vibe.d web app";
+	immutable string title = "vibe.d";
 
 	logInfo("Connecting to DB...");
 	auto db = connectMongoDB("localhost").getDatabase("vibed");

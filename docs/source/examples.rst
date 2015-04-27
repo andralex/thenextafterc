@@ -151,7 +151,10 @@ To create a skeleton web application, run:
 
     $ dub init vibed-mongo vibe.d
 
-This will make in directory ``vibed-mongo`` with a minimal HTTP server based on vibe.d.
+This will make in directory ``vibed-mongo`` with a minimal HTTP server based on vibe.d_.
+
+.. _vibe.d: http://vibed.org
+
 
 The configuration file ``dub.json`` will look something like this:
 
@@ -179,7 +182,7 @@ The project has the following structure:
             style.css
         favicon.ico
 
-After installing MongoDB, run the server
+After installing MongoDB_, run the server
 
 .. code-block:: shell
 
@@ -209,6 +212,9 @@ In another console run the Mongo interpreter
 
 The above script creates a ``vibed`` database with a ``userlist`` collection, which will contain one record.
 
+.. _MongoDB: https://www.mongodb.org
+
+
 Patches
 ^^^^^^^^^
 
@@ -223,6 +229,22 @@ Comparing with the original article ``global.js`` was slightly changed:
     :language: js
     :tab-width: 4
     :lines: 129-138
+
+Diet Templates
+^^^^^^^^^^^^^^
+
+`Diet templates`_  are HTML templates which are statically compiled down to native D code.
+Diet templates syntax equals that of Jade templates with the exception of some of the advanced syntax features.
+
+First lines of ``index.dt``:
+
+.. literalinclude:: ../../examples/vibed-mongo/views/index.dt
+    :language: d
+    :tab-width: 4
+    :lines: 1-12
+
+.. _Diet templates: http://vibed.org/templates/diet
+
 
 Service
 ^^^^^^^^^^^^^
