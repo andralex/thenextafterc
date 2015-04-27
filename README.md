@@ -1,2 +1,2 @@
-# thenextafterc [![d.readthedocs.org](https://readthedocs.org/projects/d/badge/?version=latest)](http://d.readthedocs.org/en/latest/)
-[Quick Start with D](https://readthedocs.org/projects/d/badge/?version=latest)
+# thenextafterc [![d.readthedocs.org](https://readthedocs.org/projects/d/badge/?version=latest)](http://d.readthedocs.org)
+[Quick Start with D](http://d.readthedocs.org)
