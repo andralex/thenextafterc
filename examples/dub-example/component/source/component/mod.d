@@ -1,5 +1,5 @@
 /++
-Module a;
+Module mod;
 +/
 module component.mod;
 
