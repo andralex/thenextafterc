@@ -20,8 +20,10 @@ void removeSingleLineComments
 {
 	foreach(line; lineSplitter(ir))
 	{
-		auto s = line.save.find!(not!isWhite);
-		if(!s.startsWith(cmt))
+		if(!line
+			.save
+			.find!(not!isWhite)
+			.startsWith(cmt))
 		{
 			put(or, line.until(cmt));
 			put(or, "\n");
