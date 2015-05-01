@@ -113,7 +113,7 @@ The minimal configuration file for this example is
     :language: json
     :tab-width: 4
 
-.. note:: The python should be `installed <https://www.python.org/downloads/>`_. PyD searches the version of the python that is noted in the sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
+.. note:: The `python <https://www.python.org/downloads/>`_ and matplotlib should be installed. PyD searches the version of the python that is noted in the sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
 
 The `following program <https://github.com/9il/thenextafterc/tree/master/examples/matplotlib>`_
 reads data from a file and shows the histogram.
