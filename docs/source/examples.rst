@@ -151,7 +151,7 @@ To create a skeleton web application, run:
 
     $ dub init vibed-mongo vibe.d
 
-This will make in directory ``vibed-mongo`` with a minimal HTTP server based on vibe.d_.
+This will make the directory ``vibed-mongo`` with a minimal HTTP server based on vibe.d_.
 
 .. _vibe.d: http://vibed.org
 
