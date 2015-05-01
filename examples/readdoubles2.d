@@ -10,7 +10,7 @@ void main()
 	auto sample = File("10numbers.txt")
 		.byLine
 		.takeExactly(10)
-		.map!(line => parse!double(line))
+		.map!(line => line.parse!double)
 		.tee!((x){mean += x;})
 		.array;
 	mean /= sample.length;
