@@ -8,7 +8,7 @@ D is a complex multi-paradigm programming language. At the same time, if you kno
 
 .. _GitHub: http://github.com/9il/thenextafterc
 
-Hello, Wolrd!
+Hello, World!
 ~~~~~~~~~~~~~~
     
 C programs can be easily translated to D.
