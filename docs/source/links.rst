@@ -16,7 +16,7 @@ General:
  	+ `Read chapter 1 online - "D"iving In <http://www.informit.com/articles/article.aspx?p=1381876>`_
  	+ `Read chapter 13 online - Concurrency <http://www.informit.com/articles/article.aspx?p=1609144>`_
  	+ `Errata <http://erdani.com/tdpl/errata/>`_
- - **Programming in D**, Ali Çehreli - `The online book <The online book>`_
+ - **Programming in D**, Ali Çehreli - `The online book <http://ddili.org/ders/d.en/index.html>`_
  - **D Cookbook**, Adam D. Ruppe, May 26, 2014
 
  	+ `Publisher's page <http://www.packtpub.com/discover-advantages-of-programming-in-d-cookbook/book>`_
