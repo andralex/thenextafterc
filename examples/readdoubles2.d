@@ -1,9 +1,8 @@
 import std.algorithm.iteration : map, each;
 import std.array : array;
-import std.conv : to;
+import std.conv : parse;
 import std.range : takeExactly, tee;
 import std.stdio;
-import std.string : chomp;
 
 void main()
 {
@@ -11,8 +10,7 @@ void main()
 	auto sample = File("10numbers.txt")
 		.byLine
 		.takeExactly(10)
-		.map!chomp // removes trailing '\r'
-		.map!(to!double)
+		.map!(line => parse!double(line))
 		.tee!((x){mean += x;})
 		.array;
 	mean /= sample.length;
