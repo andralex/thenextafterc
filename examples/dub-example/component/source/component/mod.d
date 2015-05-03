@@ -32,7 +32,7 @@ unittest
 {
 	auto app = appender!string;
 
-	//A string that contains C or D code can be framed with `q{` and `}`
+	//A string that contains a code with C-like block syntax can be framed with `q{` and `}`
 	immutable text0 = q{
 // main function
 int main()
