@@ -3,6 +3,19 @@ import pyd.embedded;
 import pyd.extra;
 
 /++
+`srcipt` is a string that contains python code
+
+Alternatively, you can put your python code here:
+--------
+immutable script = `
+YOUR = "PYTHON"; CODE = "HERE"
+print(YOUR, CODE)
+`;
+--------
++/
+immutable script = import("show_histogram.py");
+
+/++
 `d_to_python_numpy_ndarray` converts a D array to numpy.ndarray.
 `toNumpyArray` is only an alias.
 +/
@@ -52,9 +65,3 @@ double[] readData(string file)
 		.map!(to!double) //Lazily converts words to doubles.
 		.array;          //Creates an array.
 }
-
-immutable script = `
-import matplotlib.pyplot as plt
-n, bins, patches = plt.hist(sample, num_bins, normed=1)
-plt.show()
-`;

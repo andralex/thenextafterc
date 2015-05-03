@@ -116,15 +116,23 @@ The minimal configuration file for this example is
 .. note:: The `python <https://www.python.org/downloads/>`_ and matplotlib should be installed. PyD searches the version of the python that is noted in the sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
 
 The `following program <https://github.com/9il/thenextafterc/tree/master/examples/matplotlib>`_
-reads data from a file and shows the histogram.
+reads data from a file and runs ``show_histogram.py``.
 
 .. literalinclude:: ../../examples/matplotlib/source/app.d
     :language: d
     :tab-width: 4
 
+``show_histogram.py`` is located in ``views/``
+folder that is used by dub as a default string import [#stringimport]_ folder.
+
+.. literalinclude:: ../../examples/matplotlib/views/show_histogram.py
+    :language: python
+    :tab-width: 4
+
 .. image:: /img/hist.png
     :alt: Histogram image
 
+.. [#stringimport] Strings can be imported at compile time.
 .. _matplotlib: http://matplotlib.org
 .. _Plotcli: https://github.com/BlackEdder/plotd
 .. _PyD: http://pyd.readthedocs.org
