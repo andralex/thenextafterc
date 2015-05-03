@@ -6,12 +6,15 @@ import pyd.extra;
 `srcipt` is a string that contains python code
 
 Alternatively, you can put your python code here:
+
 --------
 immutable script = `
 YOUR = "PYTHON"; CODE = "HERE"
 print(YOUR, CODE)
 `;
 --------
+
+where string is framed with backtick character.
 +/
 immutable script = import("show_histogram.py");
 
