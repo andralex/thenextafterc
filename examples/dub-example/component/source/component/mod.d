@@ -32,23 +32,22 @@ unittest
 {
 	auto app = appender!string;
 
-	immutable text0 =
-`
+	//A string that contains C or D code can be framed with `q{` and `}`
+	immutable text0 = q{
 // main function
 int main()
 {
 	// return statement
 	return 0; //returns 0
 }
-`;
+};
 
-	immutable text1 =
-`
+	immutable text1 = q{
 int main()
 {
 	return 0; 
 }
-`; // Note: "return 0; " ends with a space character
+}; // Note: "return 0; " ends with a space character
 
 	removeSingleLineComments(app, text0, "//");
 	
