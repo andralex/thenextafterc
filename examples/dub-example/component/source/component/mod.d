@@ -34,7 +34,7 @@ unittest
 
 	// A string that contains a code with C-like block syntax 
 	// can be framed with `q{` and `}`.
-	immutable text0 = q{
+	immutable textBefore = q{
 // main function
 int main()
 {
@@ -43,14 +43,14 @@ int main()
 }
 };
 
-	immutable text1 = q{
+	immutable textAfter = q{
 int main()
 {
 	return 0; 
 }
 }; // Note: "return 0; " ends with a space character.
 
-	removeSingleLineComments(app, text0, "//");
+	removeSingleLineComments(app, textBefore, "//");
 	
 	debug
 	{
@@ -58,5 +58,5 @@ int main()
 		writeln("text:", app.data);		
 	}
 	
-	assert(app.data == text1);
+	assert(app.data == textAfter);
 }
