@@ -3,7 +3,7 @@ import pyd.embedded;
 import pyd.extra;
 
 /++
-`srcipt` is a string that contains python code
+`srcipt` is a string that contains the python code to execute.
 
 Alternatively, you can put your python code here:
 
