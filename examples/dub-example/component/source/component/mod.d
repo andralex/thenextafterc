@@ -33,7 +33,7 @@ unittest
 	auto app = appender!string;
 
 	// A string that contains a code with C-like block syntax 
-	// can be framed with `q{` and `}`
+	// can be framed with `q{` and `}`.
 	immutable text0 = q{
 // main function
 int main()
@@ -48,7 +48,7 @@ int main()
 {
 	return 0; 
 }
-}; // Note: "return 0; " ends with a space character
+}; // Note: "return 0; " ends with a space character.
 
 	removeSingleLineComments(app, text0, "//");
 	
