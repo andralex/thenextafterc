@@ -6,7 +6,7 @@ D is a complex multi-paradigm programming language. At the same time, if you kno
 
 .. tip:: All examples available on GitHub_.
 
-.. _GitHub: http://github.com/9il/thenextafterc
+.. _GitHub: http://github.com/andralex/thenextafterc
 
 Hello, World!
 ~~~~~~~~~~~~~~
@@ -115,7 +115,7 @@ The minimal configuration file for this example is
 
 .. note:: The `python <https://www.python.org/downloads/>`_ and matplotlib should be installed. PyD searches the version of the python that is noted in the sub-configuration (``"pyd": "python34"`` in this example). For more information, see `the PyD's dub configuration file <https://github.com/ariovistus/pyd/blob/master/dub.json>`_.
 
-The `following program <https://github.com/9il/thenextafterc/tree/master/examples/matplotlib>`_
+The `following program <https://github.com/andralex/thenextafterc/tree/master/examples/matplotlib>`_
 reads data from a file and runs ``show_histogram.py``.
 
 .. literalinclude:: ../../examples/matplotlib/source/app.d
