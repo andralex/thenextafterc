@@ -44,7 +44,7 @@ void main()
 	
 	Equivalent code would be just:
 	--------
-	pythonContext.sample = toNumpyArray(readData("view/data.txt"));
+	pythonContext.sample = toNumpyArray(readData("data/data.txt"));
 	--------
 	+/
 	pythonContext.sample = "data/data.txt".readData.toNumpyArray;
